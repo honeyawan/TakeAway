@@ -9,14 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE2D28211F7B72EA005748E6 /* TASortOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */; };
 		BE2D28231F7B7CFF005748E6 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */; };
-		BE2D28241F7B7D26005748E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618F1F783468005CE7EA /* ViewController.swift */; };
-		BE2D28251F7B7D69005748E6 /* TARestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */; };
-		BE2D28261F7B7E09005748E6 /* TARestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618A1F782FC5005CE7EA /* TARestaurantsViewModel.swift */; };
-		BE2D28271F7B7E0B005748E6 /* TASortOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */; };
-		BE2D28281F7B8067005748E6 /* TACoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */; };
-		BE2D28291F7B8069005748E6 /* TARestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618E1F783399005CE7EA /* TARestaurantDataManager.swift */; };
-		BE2D28311F7B84DE005748E6 /* SortOptionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */; };
-		BE2D28331F7B8878005748E6 /* RestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */; };
+		BE2D28311F7B84DE005748E6 /* TASortOptionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28301F7B84DE005748E6 /* TASortOptionsViewModelTests.swift */; };
+		BE2D28331F7B8878005748E6 /* TARestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28321F7B8877005748E6 /* TARestaurantsViewModelTests.swift */; };
 		BE3203AD1F7AB6A400D67BC4 /* TACoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */; };
 		BE55E8C41F798099006ED6EB /* take_away.json in Resources */ = {isa = PBXBuildFile; fileRef = BE55E8C31F79780F006ED6EB /* take_away.json */; };
 		BE8DD8A61F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */; };
@@ -26,7 +20,6 @@
 		BE9861581F782F88005CE7EA /* TakeAway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE9861561F782F88005CE7EA /* TakeAway.xcdatamodeld */; };
 		BE98615A1F782F88005CE7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9861591F782F88005CE7EA /* Assets.xcassets */; };
 		BE98615D1F782F88005CE7EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE98615B1F782F88005CE7EA /* LaunchScreen.storyboard */; };
-		BE9861681F782F88005CE7EA /* TakeAwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861671F782F88005CE7EA /* TakeAwayTests.swift */; };
 		BE9861731F782F88005CE7EA /* TakeAwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861721F782F88005CE7EA /* TakeAwayUITests.swift */; };
 		BE98618B1F78333F005CE7EA /* TARestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */; };
 		BE9861901F783468005CE7EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618F1F783468005CE7EA /* ViewController.swift */; };
@@ -35,8 +28,6 @@
 		BEC9BE071F7C0692003C9B35 /* TACoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9BE061F7C0692003C9B35 /* TACoreDataManagerTests.swift */; };
 		BEC9BE081F7C0887003C9B35 /* TakeAway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE9861561F782F88005CE7EA /* TakeAway.xcdatamodeld */; };
 		BEC9BE0A1F7C0D59003C9B35 /* TARestaurantDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9BE091F7C0D59003C9B35 /* TARestaurantDataManagerTests.swift */; };
-		BEC9BE0D1F7C3E34003C9B35 /* RestaurantModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */; };
-		BEC9BE0E1F7C3E38003C9B35 /* RestaurantModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A51F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift */; };
 		BEC9BE101F7C3F59003C9B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9861531F782F88005CE7EA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +51,8 @@
 /* Begin PBXFileReference section */
 		BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASortOptionsViewModel.swift; sourceTree = "<group>"; };
 		BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
-		BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsViewModelTests.swift; sourceTree = "<group>"; };
-		BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModelTests.swift; sourceTree = "<group>"; };
+		BE2D28301F7B84DE005748E6 /* TASortOptionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASortOptionsViewModelTests.swift; sourceTree = "<group>"; };
+		BE2D28321F7B8877005748E6 /* TARestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantsViewModelTests.swift; sourceTree = "<group>"; };
 		BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACoreDataManager.swift; sourceTree = "<group>"; };
 		BE55E8C31F79780F006ED6EB /* take_away.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = take_away.json; sourceTree = "<group>"; };
 		BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestaurantModel+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -74,7 +65,6 @@
 		BE98615C1F782F88005CE7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE98615E1F782F88005CE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9861631F782F88005CE7EA /* TakeAwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeAwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE9861671F782F88005CE7EA /* TakeAwayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayTests.swift; sourceTree = "<group>"; };
 		BE9861691F782F88005CE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE98616E1F782F88005CE7EA /* TakeAwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeAwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9861721F782F88005CE7EA /* TakeAwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayUITests.swift; sourceTree = "<group>"; };
@@ -152,10 +142,10 @@
 		BE98614E1F782F88005CE7EA /* TakeAway */ = {
 			isa = PBXGroup;
 			children = (
-				BE98618D1F783399005CE7EA /* DataManager */,
-				BE9861871F782FC5005CE7EA /* Model */,
 				BE9861801F782FC5005CE7EA /* View */,
+				BE9861871F782FC5005CE7EA /* Model */,
 				BE9861891F782FC5005CE7EA /* ViewModel */,
+				BE98618D1F783399005CE7EA /* DataManager */,
 				BE55E8C21F79780F006ED6EB /* Resources */,
 				BE98614F1F782F88005CE7EA /* AppDelegate.swift */,
 				BE9861531F782F88005CE7EA /* Main.storyboard */,
@@ -170,10 +160,9 @@
 		BE9861661F782F88005CE7EA /* TakeAwayTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE9861671F782F88005CE7EA /* TakeAwayTests.swift */,
 				BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */,
-				BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */,
-				BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */,
+				BE2D28301F7B84DE005748E6 /* TASortOptionsViewModelTests.swift */,
+				BE2D28321F7B8877005748E6 /* TARestaurantsViewModelTests.swift */,
 				BEC9BE061F7C0692003C9B35 /* TACoreDataManagerTests.swift */,
 				BEC9BE091F7C0D59003C9B35 /* TARestaurantDataManagerTests.swift */,
 				BE9861691F782F88005CE7EA /* Info.plist */,
@@ -394,20 +383,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2D28241F7B7D26005748E6 /* ViewController.swift in Sources */,
-				BE2D28281F7B8067005748E6 /* TACoreDataManager.swift in Sources */,
 				BEC9BE081F7C0887003C9B35 /* TakeAway.xcdatamodeld in Sources */,
 				BE2D28231F7B7CFF005748E6 /* ViewControllerTests.swift in Sources */,
 				BEC9BE071F7C0692003C9B35 /* TACoreDataManagerTests.swift in Sources */,
-				BE2D28331F7B8878005748E6 /* RestaurantsViewModelTests.swift in Sources */,
-				BEC9BE0D1F7C3E34003C9B35 /* RestaurantModel+CoreDataClass.swift in Sources */,
-				BEC9BE0E1F7C3E38003C9B35 /* RestaurantModel+CoreDataProperties.swift in Sources */,
-				BE2D28291F7B8069005748E6 /* TARestaurantDataManager.swift in Sources */,
-				BE2D28311F7B84DE005748E6 /* SortOptionsViewModelTests.swift in Sources */,
-				BE9861681F782F88005CE7EA /* TakeAwayTests.swift in Sources */,
-				BE2D28261F7B7E09005748E6 /* TARestaurantsViewModel.swift in Sources */,
-				BE2D28271F7B7E0B005748E6 /* TASortOptionsViewModel.swift in Sources */,
-				BE2D28251F7B7D69005748E6 /* TARestaurantTableViewCell.swift in Sources */,
+				BE2D28331F7B8878005748E6 /* TARestaurantsViewModelTests.swift in Sources */,
+				BE2D28311F7B84DE005748E6 /* TASortOptionsViewModelTests.swift in Sources */,
 				BEC9BE0A1F7C0D59003C9B35 /* TARestaurantDataManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

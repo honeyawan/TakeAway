@@ -65,15 +65,6 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
     
     func sortWithValues() {
         
-        
-        filteredModels = filteredModels!.sorted {
-            if $0.statusCode != $1.statusCode {
-            return $0.statusCode < $1.statusCode
-            }
-            return $0.isFavourite
-            
-        }
-        
         if let sortOption = selectedSortOption {
             switch sortOption {
             case .bestMatch:
@@ -102,13 +93,15 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
     
     
     
-   private func sortWithFavourite() {
-        filteredModels?.sort{return ($0.isFavourite && !$1.isFavourite)}
-    }
-    
     private func sortWithStatus() {
         filteredModels?.sort{return ($0.statusCode < $1.statusCode)}
     }
+    
+    private func sortWithFavourite() {
+        filteredModels?.sort{return ($0.isFavourite && !$1.isFavourite)}
+    }
+    
+
     
     // Mark: Filter Functionality
     func searchTermUpdated(_ searchString : String) {

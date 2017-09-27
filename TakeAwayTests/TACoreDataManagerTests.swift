@@ -7,30 +7,30 @@
 //
 
 import XCTest
-
+@testable import TakeAway
 class TACoreDataManagerTests: XCTestCase {
     
-    var viewModel : TACoreDataManager!
+    var manager : TACoreDataManager!
 
     override func setUp() {
         super.setUp()
-        viewModel = TACoreDataManager.shared
+        manager = TACoreDataManager.shared
     }
     
     func testPersistentContainerExists() {
-        XCTAssertNotNil(viewModel.persistentContainer)
+        XCTAssertNotNil(manager.persistentContainer)
     }
 
     func testContextExists() {
-        XCTAssertNotNil(viewModel.persistentContainer.viewContext)
+        XCTAssertNotNil(manager.persistentContainer.viewContext)
     }
     
     func testPersistenCoordinatorExists(){
-        XCTAssertNotNil(viewModel.persistentContainer.persistentStoreCoordinator)
+        XCTAssertNotNil(manager.persistentContainer.persistentStoreCoordinator)
     }
     
     func testManagedObjectModelExists(){
-        XCTAssertNotNil(viewModel.persistentContainer.managedObjectModel)
+        XCTAssertNotNil(manager.persistentContainer.managedObjectModel)
     }
     
  

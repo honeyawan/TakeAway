@@ -7,8 +7,9 @@
 //
 
 import XCTest
+@testable import TakeAway
 
-class SortOptionsViewModelTests: XCTestCase {
+class TASortOptionsViewModelTests: XCTestCase {
     
     var viewModel :  TASortOptionsViewModel!
     override func setUp() {

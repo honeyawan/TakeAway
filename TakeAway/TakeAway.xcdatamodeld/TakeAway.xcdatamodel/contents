@@ -14,7 +14,11 @@
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statusCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="SampleEntity" representedClassName="SampleEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="haneef" syncable="YES"/>
+    </entity>
     <elements>
         <element name="RestaurantModel" positionX="-63" positionY="-18" width="128" height="225"/>
+        <element name="SampleEntity" positionX="-63" positionY="72" width="128" height="60"/>
     </elements>
 </model>

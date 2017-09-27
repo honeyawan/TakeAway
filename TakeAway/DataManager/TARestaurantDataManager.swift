@@ -7,16 +7,17 @@
 //
 
 import UIKit
+//@testable import TakeAway
 
 class TARestaurantDataManager: NSObject {
     
     func loadRestaurantList() -> [RestaurantModel]? {
         // If list is empty then populate from file
-        guard let listVals = TACoreDataManager.shared.fetchRestaurantList() ,  listVals.count > 0 else {
+        guard let restList = TACoreDataManager.shared.fetchRestaurantList() ,  restList.count > 0 else {
             saveRestaurantListFromFile()
             return TACoreDataManager.shared.fetchRestaurantList()
         }        
-        return listVals
+        return restList
     }
     
     func saveResults() {
@@ -37,7 +38,6 @@ class TARestaurantDataManager: NSObject {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 restaurantJsonData = json as? [String : Any]
-                return restaurantJsonData
             }
         } catch {
             print(error.localizedDescription)

@@ -7,8 +7,9 @@
 //
 
 import XCTest
+@testable import TakeAway
 
-class RestaurantsViewModelTests: XCTestCase {
+class TARestaurantsViewModelTests: XCTestCase {
     
     var viewModel :  TARestaurantsViewModel!
     override func setUp() {
@@ -29,12 +30,12 @@ class RestaurantsViewModelTests: XCTestCase {
     
     func testSortByDistance(){
         viewModel.sortRestaurantsWithOption(SortOptions.distance)
-        XCTAssertGreaterThan(viewModel.filteredModels!.first!.distance, viewModel.filteredModels!.last!.distance)
+         XCTAssertLessThan(viewModel.filteredModels!.first!.distance, viewModel.filteredModels!.last!.distance)
     }
     
     func testSortByMinCost(){
         viewModel.sortRestaurantsWithOption(SortOptions.minCost)
-        XCTAssertGreaterThan(viewModel.filteredModels!.first!.minCost, viewModel.filteredModels!.last!.minCost)
+        XCTAssertLessThan(viewModel.filteredModels!.first!.minCost, viewModel.filteredModels!.last!.minCost)
     }
     
     func testSortByStatus(){

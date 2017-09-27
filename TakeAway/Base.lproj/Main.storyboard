@@ -61,7 +61,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="clk-J4-tRJ">
-                                                            <rect key="frame" x="16" y="0.0" width="343" height="64.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="64.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qB1-vN-N06">
                                                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="64.5"/>
@@ -81,7 +81,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXZ-Uo-3tU">
-                                                                    <rect key="frame" x="293" y="0.0" width="50" height="64.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="64.5"/>
                                                                     <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
                                                                     <state key="normal" image="iconFavourite"/>
                                                                     <state key="selected" image="iconFavouriteSelected"/>
@@ -163,12 +163,16 @@
                     <navigationItem key="navigationItem" title="RESTAURANTS" id="VTK-Xj-RPb"/>
                     <connections>
                         <outlet property="btnSort" destination="ItI-R2-wBb" id="TEw-cF-399"/>
+                        <outlet property="restaurantViewModel" destination="MIO-b9-GOj" id="HpV-Ki-24g"/>
                         <outlet property="sortOptionHeight" destination="Oe4-1G-6Uu" id="XLC-Ug-6pl"/>
+                        <outlet property="sortOptionsViewModel" destination="pg4-Wt-GAZ" id="aHU-q1-C5u"/>
                         <outlet property="spinner" destination="MEj-dD-hCd" id="j0R-ZR-Gbg"/>
                         <outlet property="tableView" destination="XrV-6l-ps3" id="y4g-LQ-8jc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="pg4-Wt-GAZ" customClass="TASortOptionsViewModel" customModule="TakeAway" customModuleProvider="target"/>
+                <customObject id="MIO-b9-GOj" customClass="TARestaurantsViewModel" customModule="TakeAway" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="775" y="90"/>
         </scene>

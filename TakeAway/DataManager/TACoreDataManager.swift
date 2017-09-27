@@ -15,8 +15,7 @@ class TACoreDataManager: NSObject {
     private override init() {
         
     }
-    
-    
+
     func fetchRestaurantList()-> [RestaurantModel]? {
         let context = persistentContainer.viewContext
         let fetchRequest : NSFetchRequest<RestaurantModel> = RestaurantModel.fetchRequest()
@@ -28,7 +27,6 @@ class TACoreDataManager: NSObject {
             return nil
         }
     }
-    
     
     func saveRestaurantList(jsonData : [String : Any]?){
         
@@ -93,7 +91,7 @@ class TACoreDataManager: NSObject {
         let container = NSPersistentContainer(name: "TakeAway")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                print("Unresolved error : \(error.userInfo)")
             }
         })
         return container

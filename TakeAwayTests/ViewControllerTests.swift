@@ -16,9 +16,7 @@ class ViewControllerTests: XCTestCase {
     override func setUp() {
         
         super.setUp()
-        let bundle = Bundle(for: self.classForCoder)
-
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: bundle)
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         restaurantsViewController = storyboard.instantiateViewController(withIdentifier: "RestaurantViewController") as! ViewController
         _ = restaurantsViewController.view
     }
@@ -53,7 +51,7 @@ class ViewControllerTests: XCTestCase {
         XCTAssert(firstCell is TARestaurantTableViewCell)
     }
     
-    func testConformsToSeachBarDelegate() {
+    func testConformsToSearchBarDelegate() {
         XCTAssert(restaurantsViewController.conforms(to: UISearchBarDelegate.self))
         
         XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.searchBar(_:textDidChange:))))
@@ -77,20 +75,6 @@ class ViewControllerTests: XCTestCase {
         
         XCTAssert(restaurantsViewController.conforms(to: UIPickerViewDelegate.self))
         XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.pickerView(_:didSelectRow:inComponent:))))
-    }
-    
-
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
     
 }

@@ -18,7 +18,6 @@ class TARestaurantDataManagerTests: XCTestCase {
     }
     
     func testRestaurantReadsLocalFile(){
-        
         XCTAssertNotNil(manager.geRestaurantJsonDataFromlocalFile())
     }
     

@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     
     
     let restaurantCellIdentifier = "TARestaurantTableViewCellID"
-    var restaurantViewModel = TARestaurantsViewModel()
-    var sortOptionsViewModel = TASortOptionsViewModel()
+    
+    @IBOutlet var sortOptionsViewModel: TASortOptionsViewModel!
+    @IBOutlet var restaurantViewModel: TARestaurantsViewModel!
 
     @IBOutlet weak var btnSort: UIButton!
     @IBOutlet weak var tableView: UITableView!
