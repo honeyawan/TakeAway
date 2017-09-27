@@ -1,56 +1,86 @@
 //
-//  FruitViewModel.swift
-//  AutoScout
+//  TARestaurantsViewModel.swift
+//  TakeAway
 //
-//  Created by Haneef Habib on 9/22/17.
-//  Copyright © 2017 AutoScout. All rights reserved.
+//  Created by Haneef Habib on 9/26/17.
+//  Copyright © 2017 TakeAway. All rights reserved.
 //
 
 import UIKit
 
 class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
     
-    var restaurantModels : [TARestaurant]?
-    var sortedModels : [TARestaurant]?
-    var filteredModels : [TARestaurant]?
+    /// Origional list of restaurants
+    var restaurantModels : [RestaurantModel]?
+    
+    /// Filtered and Sorted List of restaruants
+    var filteredModels : [RestaurantModel]?
     
     var selectedSortOption : SortOptions?
     var searchTerm = ""
-    let dataManager = TARestaurantDataManager.shared
+    let dataManager = TARestaurantDataManager()
     
-    func loadData(completion :@escaping (_ error : Error?) -> Void) {
-        weak var weakSelf = self
-        dataManager.loadDataWithCompletion { (restaurants, error) in
-            if let strongSelf = weakSelf {
-                strongSelf.restaurantModels = restaurants
-                strongSelf.filteredModels = restaurants
-                strongSelf.sortResults()
-                DispatchQueue.main.async(execute: {
-                    completion(error)
-                })
-            }
-        }
+    override init() {
+        super.init()
+        loadRestaurantList()
     }
     
-    func filterResults() {
-        filteredModels = searchTerm.isEmpty ? restaurantModels :  restaurantModels!.filter{ $0.name?.lowercased().range(of: searchTerm.lowercased()) != nil }
+    func loadRestaurantList() {
+        restaurantModels =  dataManager.loadRestaurantList()
+        filteredModels = restaurantModels
         sortResults()
     }
     
+ 
+    //MARK: Sorting Functionality
+    
+    func sortRestaurantsWithOption(_ option : SortOptions?) {
+        selectedSortOption = option
+        sortResults()
+    }
+
     func sortResults() {
+        
         sortWithValues()
         sortWithStatus()
         sortWithFavourite()
+        
+        
+        
+//        filteredModels = filteredModels!.sorted {
+//
+//            if $0.statusCode != $1.statusCode {
+//                return ($0.statusCode < $1.statusCode)
+//            }
+//
+//            if $0.distance != $1.distance {
+//                return ($0.distance < $1.distance)
+//            }
+//return true
+//        }
+
     }
     
+    
+    
     func sortWithValues() {
+        
+        
+        filteredModels = filteredModels!.sorted {
+            if $0.statusCode != $1.statusCode {
+            return $0.statusCode < $1.statusCode
+            }
+            return $0.isFavourite
+            
+        }
+        
         if let sortOption = selectedSortOption {
             switch sortOption {
             case .bestMatch:
                 filteredModels?.sort{return $0.bestMatch > $1.bestMatch}
                 
             case .deliveryCost:
-                filteredModels?.sort{return $0.deliveryCosts < $1.deliveryCosts}
+                filteredModels?.sort{return $0.deliveryCost < $1.deliveryCost}
                 
             case .averageRating:
                 filteredModels?.sort{return $0.ratingAverage > $1.ratingAverage}
@@ -70,6 +100,8 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
         }
     }
     
+    
+    
    private func sortWithFavourite() {
         filteredModels?.sort{return ($0.isFavourite && !$1.isFavourite)}
     }
@@ -78,10 +110,17 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
         filteredModels?.sort{return ($0.statusCode < $1.statusCode)}
     }
     
+    // Mark: Filter Functionality
     func searchTermUpdated(_ searchString : String) {
         searchTerm = searchString
         filterResults()
     }
+    
+    func filterResults() {
+        filteredModels = searchTerm.isEmpty ? restaurantModels :  restaurantModels!.filter{ $0.name?.lowercased().range(of: searchTerm.lowercased()) != nil }
+        sortResults()
+    }
+    
     
     
     func  numberOfRowsInSection() -> Int {
@@ -111,15 +150,11 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
         return "\(String(format: "%.1f",meters/1000)) km"
     }
     
-    func sortRestaurantsWithOption(_ option : SortOptions?) {
-        selectedSortOption = option
-        sortResults()
-    }
-    
     //MARK: TARestaurantCellFavouriteDelegate
     func restaurantCellPressedFavourite(_ isFavourite: Bool, atIndex index: Int) {
         let currentModel = filteredModels![index]
         currentModel.isFavourite = isFavourite
+        dataManager.saveResults()
     }
         
 }

@@ -12,7 +12,7 @@
         <!--RESTAURANTS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RestaurantViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TakeAway" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TakeAway" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="4cl-qC-jCJ"/>
                                         </connections>
                                     </tableView>
-                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BEu-PW-4Sq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BEu-PW-4Sq">
                                         <rect key="frame" x="0.0" y="603" width="375" height="0.0"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I18-SR-fQM">
@@ -145,7 +145,7 @@
                                     <constraint firstItem="XrV-6l-ps3" firstAttribute="leading" secondItem="8KM-Vj-NuF" secondAttribute="leading" id="Ymr-qb-LfA"/>
                                 </constraints>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-dD-hCd">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-dD-hCd">
                                 <rect key="frame" x="177" y="355.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>

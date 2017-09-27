@@ -13,11 +13,9 @@ class TACoreDataManager: NSObject {
 
     static let shared = TACoreDataManager()
     private override init() {
-    }
-    
-    func updateRestaurant(){
         
     }
+    
     
     func fetchRestaurantList()-> [RestaurantModel]? {
         let context = persistentContainer.viewContext
@@ -31,64 +29,62 @@ class TACoreDataManager: NSObject {
         }
     }
     
-    func saveRestaurantList(restaurantDataArray : [[String : Any]]){
+    
+    func saveRestaurantList(jsonData : [String : Any]?){
         
         let context = persistentContainer.viewContext
-        
-        for restaurantData in restaurantDataArray {
-            
-            let restaurantModel = NSEntityDescription.insertNewObject(forEntityName: "RestaurantModel", into: context) as! RestaurantModel
-            
-            if let restaurantName = restaurantData["name"] as?  String {
-                restaurantModel.name = restaurantName
-            }
-            
-            if let restStatus = restaurantData["status"] as? String {
-                restaurantModel.status = restStatus
-                switch restStatus {
-                case "open":
-                    restaurantModel.statusCode = 1
-                case "order ahead":
-                    restaurantModel.statusCode = 2
-                default:
-                    restaurantModel.statusCode = 3
+        if let dictionary = jsonData {
+            if let restaurantDataArray = dictionary["restaurants"] as? [[String : Any]] {
+                for restaurantData in restaurantDataArray {
+                    let restaurantModel = NSEntityDescription.insertNewObject(forEntityName: "RestaurantModel", into: context) as! RestaurantModel
+                    if let restaurantName = restaurantData["name"] as?  String {
+                        restaurantModel.name = restaurantName
+                    }
+                    
+                    if let restStatus = restaurantData["status"] as? String {
+                        restaurantModel.status = restStatus
+                        switch restStatus {
+                        case "open":
+                            restaurantModel.statusCode = 1
+                        case "order ahead":
+                            restaurantModel.statusCode = 2
+                        default:
+                            restaurantModel.statusCode = 3
+                        }
+                    }
+                    
+                    if let sortingValues = restaurantData["sortingValues"] as? [String : Any]{
+                        
+                        if let value = sortingValues["bestMatch"] as? Double {
+                            restaurantModel.bestMatch = value
+                        }
+                        if let value = sortingValues["newest"] as? Double {
+                            restaurantModel.newest = value
+                        }
+                        
+                        if let value = sortingValues["ratingAverage"] as? Double {
+                            restaurantModel.ratingAverage = value
+                        }
+                        
+                        if let value = sortingValues["distance"] as? Double {
+                            restaurantModel.distance = value
+                        }
+                        
+                        if let value = sortingValues["averageProductPrice"] as? Double {
+                            restaurantModel.averageProductPrice = value
+                        }
+                        
+                        if let value = sortingValues["deliveryCosts"] as? Double {
+                            restaurantModel.deliveryCost = value
+                        }
+                        
+                        if let value = sortingValues["minCost"] as? Double {
+                            restaurantModel.minCost = value
+                        }
+                    }
                 }
             }
-            
-            if let sortingValues = restaurantData["sortingValues"] as? [String : Any]{
-                
-                if let value = sortingValues["bestMatch"] as? Double {
-                    restaurantModel.bestMatch = value
-                }
-                
-                if let value = sortingValues["newest"] as? Double {
-                    restaurantModel.newest = value
-                }
-                
-                
-                if let value = sortingValues["ratingAverage"] as? Double {
-                    restaurantModel.ratingAverage = value
-                }
-                
-                if let value = sortingValues["distance"] as? Double {
-                    restaurantModel.distance = value
-                }
-                
-                if let value = sortingValues["averageProductPrice"] as? Double {
-                    restaurantModel.averageProductPrice = value
-                }
-                
-                if let value = sortingValues["deliveryCosts"] as? Double {
-                    restaurantModel.deliveryCost = value
-                }
-                
-                if let value = sortingValues["minCost"] as? Double {
-                    restaurantModel.minCost = value
-                }
-            }
-            
         }
-        
         saveContext()
         
     }

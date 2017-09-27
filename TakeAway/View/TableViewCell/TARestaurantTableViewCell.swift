@@ -1,14 +1,14 @@
 //
-//  FruiteTableViewCell.swift
-//  AutoScout
+//  TARestaurantTableViewCell.swift
+//  TakeAway
 //
-//  Created by Haneef Habib on 9/22/17.
-//  Copyright © 2017 AutoScout. All rights reserved.
+//  Created by Haneef Habib on 9/26/17.
+//  Copyright © 2017 TakeAway. All rights reserved.
 //
 
 import UIKit
 
-protocol TARestaurantCellFavouriteDelegate : NSObjectProtocol {
+@objc protocol TARestaurantCellFavouriteDelegate : NSObjectProtocol {
     func restaurantCellPressedFavourite(_ isFavourite : Bool, atIndex index:Int)
 }
 

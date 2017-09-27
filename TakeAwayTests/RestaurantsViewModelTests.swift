@@ -10,31 +10,57 @@ import XCTest
 
 class RestaurantsViewModelTests: XCTestCase {
     
+    var viewModel :  TARestaurantsViewModel!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel = TARestaurantsViewModel()
     }
     
     func testLoadData() {
-        
+        XCTAssertNotNil(viewModel.restaurantModels)
+        XCTAssertNotNil(viewModel.filteredModels)
+    }
+    
+   func testSortByRatings(){
+    viewModel.sortRestaurantsWithOption(SortOptions.averageRating)
+    XCTAssertGreaterThan(viewModel.filteredModels!.first!.ratingAverage, viewModel.filteredModels!.last!.ratingAverage)
+    }
+    
+    
+    func testSortByDistance(){
+        viewModel.sortRestaurantsWithOption(SortOptions.distance)
+        XCTAssertGreaterThan(viewModel.filteredModels!.first!.distance, viewModel.filteredModels!.last!.distance)
+    }
+    
+    func testSortByMinCost(){
+        viewModel.sortRestaurantsWithOption(SortOptions.minCost)
+        XCTAssertGreaterThan(viewModel.filteredModels!.first!.minCost, viewModel.filteredModels!.last!.minCost)
+    }
+    
+    func testSortByStatus(){
+        // FilteredModels are default sorted by status
+        XCTAssertLessThan(viewModel.filteredModels!.first!.statusCode, viewModel.filteredModels!.last!.statusCode)
     }
     
     func testFilterResults() {
-        
+        viewModel.searchTermUpdated("food")
+        if let fitleredModels = viewModel.filteredModels {
+            let randomIndex = Int(arc4random())%fitleredModels.count
+            XCTAssert(fitleredModels[randomIndex].name!.contains("food"))
+        }
     }
     
     
-    func  testNumberOfRowsInSection() {
+    func testConformsToTableViewDataSourceProtocol() {
         
+        XCTAssert(viewModel.conforms(to: TARestaurantCellFavouriteDelegate.self))
+        XCTAssert(viewModel.responds(to: #selector(viewModel.restaurantCellPressedFavourite(_:atIndex:))))
     }
     
     func testTextForDistance(){
+     XCTAssertEqual(viewModel.textForDistance(1500), "1.5 km")
     }
     
-    func testSortRestaurantsWithStatus() {
-    }
-    
-    func testSortRestaurantsWithOption () {
-    }
+
     
 }

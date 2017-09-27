@@ -2,7 +2,7 @@
 //  TASortOptionsViewModel.swift
 //  TakeAway
 //
-//  Created by Haneef Habib on 9/27/17.
+//  Created by Haneef Habib on 9/26/17.
 //  Copyright © 2017 TakeAway. All rights reserved.
 //
 
@@ -19,15 +19,7 @@ public enum SortOptions:String {
 }
 
 class TASortOptionsViewModel: NSObject {
-    
-    
-//    weak var btnSort: UIButton?
-//    weak var sortOptionHeight: NSLayoutConstraint?
-//
-//    func sortButtonPressed(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
-    
+
     var selectedSortOption : SortOptions?
     var pickerContent : [SortOptions] = [SortOptions.bestMatch , SortOptions.Newest , SortOptions.averageRating , SortOptions.distance,SortOptions.deliveryCost, SortOptions.productPrice,SortOptions.minCost]
     

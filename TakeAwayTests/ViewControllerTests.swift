@@ -7,18 +7,18 @@
 //
 
 import XCTest
+@testable import TakeAway
+
 class ViewControllerTests: XCTestCase {
-    
-    
-    
+        
     var restaurantsViewController: ViewController!
     
     override func setUp() {
         
         super.setUp()
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let navigationController = storyboard.instantiateViewController(withIdentifier: "navigationController") as! UINavigationController
-//        restaurantsViewController = navigationController.topViewController as! ViewController
+        let bundle = Bundle(for: self.classForCoder)
+
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: bundle)
         restaurantsViewController = storyboard.instantiateViewController(withIdentifier: "RestaurantViewController") as! ViewController
         _ = restaurantsViewController.view
     }

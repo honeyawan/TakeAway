@@ -23,24 +23,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    private func loadData() {
-        spinner.startAnimating()
-        restaurantViewModel.loadData { (error) in
-            self.spinner.stopAnimating()
-            self.tableView.reloadData()
-            if error != nil {
-                let alertController = UIAlertController.init(title: "Error", message: error!.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                self.show(alertController, sender: nil)
-            }
-        }
-    }
 }
 
 //MARK: IBActions
