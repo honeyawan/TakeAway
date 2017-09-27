@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2D28211F7B72EA005748E6 /* TASortOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */; };
+		BE2D28231F7B7CFF005748E6 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */; };
+		BE2D28241F7B7D26005748E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618F1F783468005CE7EA /* ViewController.swift */; };
+		BE2D28251F7B7D69005748E6 /* TARestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */; };
+		BE2D28261F7B7E09005748E6 /* TARestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618A1F782FC5005CE7EA /* TARestaurantsViewModel.swift */; };
+		BE2D28271F7B7E0B005748E6 /* TASortOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */; };
+		BE2D28281F7B8067005748E6 /* TACoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */; };
+		BE2D28291F7B8069005748E6 /* TARestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618E1F783399005CE7EA /* TARestaurantDataManager.swift */; };
+		BE2D282A1F7B806E005748E6 /* TARestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861881F782FC5005CE7EA /* TARestaurant.swift */; };
+		BE2D282B1F7B809A005748E6 /* RestaurantModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */; };
+		BE2D282C1F7B809C005748E6 /* RestaurantModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A51F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift */; };
+		BE2D282D1F7B80DB005748E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9861531F782F88005CE7EA /* Main.storyboard */; };
+		BE2D28311F7B84DE005748E6 /* SortOptionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */; };
+		BE2D28331F7B8878005748E6 /* RestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */; };
+		BE3203AD1F7AB6A400D67BC4 /* TACoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */; };
+		BE55E8C41F798099006ED6EB /* take_away.json in Resources */ = {isa = PBXBuildFile; fileRef = BE55E8C31F79780F006ED6EB /* take_away.json */; };
+		BE8DD8A61F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */; };
+		BE8DD8A71F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8DD8A51F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift */; };
+		BE9861501F782F88005CE7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98614F1F782F88005CE7EA /* AppDelegate.swift */; };
+		BE9861551F782F88005CE7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9861531F782F88005CE7EA /* Main.storyboard */; };
+		BE9861581F782F88005CE7EA /* TakeAway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE9861561F782F88005CE7EA /* TakeAway.xcdatamodeld */; };
+		BE98615A1F782F88005CE7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9861591F782F88005CE7EA /* Assets.xcassets */; };
+		BE98615D1F782F88005CE7EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE98615B1F782F88005CE7EA /* LaunchScreen.storyboard */; };
+		BE9861681F782F88005CE7EA /* TakeAwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861671F782F88005CE7EA /* TakeAwayTests.swift */; };
+		BE9861731F782F88005CE7EA /* TakeAwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861721F782F88005CE7EA /* TakeAwayUITests.swift */; };
+		BE98618B1F78333F005CE7EA /* TARestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */; };
+		BE9861901F783468005CE7EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618F1F783468005CE7EA /* ViewController.swift */; };
+		BE9861911F78359F005CE7EA /* TARestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618A1F782FC5005CE7EA /* TARestaurantsViewModel.swift */; };
+		BE9861921F7838F0005CE7EA /* TARestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9861881F782FC5005CE7EA /* TARestaurant.swift */; };
+		BE9861931F7838F8005CE7EA /* TARestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98618E1F783399005CE7EA /* TARestaurantDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE9861641F782F88005CE7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9861441F782F88005CE7EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE98614B1F782F88005CE7EA;
+			remoteInfo = TakeAway;
+		};
+		BE98616F1F782F88005CE7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9861441F782F88005CE7EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE98614B1F782F88005CE7EA;
+			remoteInfo = TakeAway;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASortOptionsViewModel.swift; sourceTree = "<group>"; };
+		BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsViewModelTests.swift; sourceTree = "<group>"; };
+		BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModelTests.swift; sourceTree = "<group>"; };
+		BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACoreDataManager.swift; sourceTree = "<group>"; };
+		BE55E8C31F79780F006ED6EB /* take_away.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = take_away.json; sourceTree = "<group>"; };
+		BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestaurantModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE8DD8A51F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestaurantModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BE98614C1F782F88005CE7EA /* TakeAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE98614F1F782F88005CE7EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE9861541F782F88005CE7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE9861571F782F88005CE7EA /* TakeAway.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeAway.xcdatamodel; sourceTree = "<group>"; };
+		BE9861591F782F88005CE7EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE98615C1F782F88005CE7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE98615E1F782F88005CE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9861631F782F88005CE7EA /* TakeAwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeAwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9861671F782F88005CE7EA /* TakeAwayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayTests.swift; sourceTree = "<group>"; };
+		BE9861691F782F88005CE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE98616E1F782F88005CE7EA /* TakeAwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeAwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9861721F782F88005CE7EA /* TakeAwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayUITests.swift; sourceTree = "<group>"; };
+		BE9861741F782F88005CE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		BE9861881F782FC5005CE7EA /* TARestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurant.swift; sourceTree = "<group>"; };
+		BE98618A1F782FC5005CE7EA /* TARestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantsViewModel.swift; sourceTree = "<group>"; };
+		BE98618E1F783399005CE7EA /* TARestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantDataManager.swift; sourceTree = "<group>"; };
+		BE98618F1F783468005CE7EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TakeAway/View/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE9861491F782F88005CE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9861601F782F88005CE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE98616B1F782F88005CE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE55E8C21F79780F006ED6EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE55E8C31F79780F006ED6EB /* take_away.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE8DD8A31F7AE87100F92FA1 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE8DD8A41F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift */,
+				BE8DD8A51F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		BE9861431F782F88005CE7EA = {
+			isa = PBXGroup;
+			children = (
+				BE98614E1F782F88005CE7EA /* TakeAway */,
+				BE9861661F782F88005CE7EA /* TakeAwayTests */,
+				BE9861711F782F88005CE7EA /* TakeAwayUITests */,
+				BE98614D1F782F88005CE7EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE98614D1F782F88005CE7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE98614C1F782F88005CE7EA /* TakeAway.app */,
+				BE9861631F782F88005CE7EA /* TakeAwayTests.xctest */,
+				BE98616E1F782F88005CE7EA /* TakeAwayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE98614E1F782F88005CE7EA /* TakeAway */ = {
+			isa = PBXGroup;
+			children = (
+				BE98618D1F783399005CE7EA /* DataManager */,
+				BE9861871F782FC5005CE7EA /* Model */,
+				BE9861801F782FC5005CE7EA /* View */,
+				BE9861891F782FC5005CE7EA /* ViewModel */,
+				BE55E8C21F79780F006ED6EB /* Resources */,
+				BE98614F1F782F88005CE7EA /* AppDelegate.swift */,
+				BE9861531F782F88005CE7EA /* Main.storyboard */,
+				BE9861591F782F88005CE7EA /* Assets.xcassets */,
+				BE98615B1F782F88005CE7EA /* LaunchScreen.storyboard */,
+				BE98615E1F782F88005CE7EA /* Info.plist */,
+				BE9861561F782F88005CE7EA /* TakeAway.xcdatamodeld */,
+			);
+			path = TakeAway;
+			sourceTree = "<group>";
+		};
+		BE9861661F782F88005CE7EA /* TakeAwayTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE9861671F782F88005CE7EA /* TakeAwayTests.swift */,
+				BE2D28221F7B7CFF005748E6 /* ViewControllerTests.swift */,
+				BE2D28301F7B84DE005748E6 /* SortOptionsViewModelTests.swift */,
+				BE2D28321F7B8877005748E6 /* RestaurantsViewModelTests.swift */,
+				BE9861691F782F88005CE7EA /* Info.plist */,
+			);
+			path = TakeAwayTests;
+			sourceTree = "<group>";
+		};
+		BE9861711F782F88005CE7EA /* TakeAwayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE9861721F782F88005CE7EA /* TakeAwayUITests.swift */,
+				BE9861741F782F88005CE7EA /* Info.plist */,
+			);
+			path = TakeAwayUITests;
+			sourceTree = "<group>";
+		};
+		BE9861801F782FC5005CE7EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE9861831F782FC5005CE7EA /* TableViewCell */,
+				BE9861851F782FC5005CE7EA /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE9861831F782FC5005CE7EA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE9861841F782FC5005CE7EA /* TARestaurantTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BE9861851F782FC5005CE7EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE98618F1F783468005CE7EA /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BE9861871F782FC5005CE7EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE8DD8A31F7AE87100F92FA1 /* CoreDataModels */,
+				BE9861881F782FC5005CE7EA /* TARestaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE9861891F782FC5005CE7EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE98618A1F782FC5005CE7EA /* TARestaurantsViewModel.swift */,
+				BE2D28201F7B72EA005748E6 /* TASortOptionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE98618D1F783399005CE7EA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE3203AC1F7AB6A400D67BC4 /* TACoreDataManager.swift */,
+				BE98618E1F783399005CE7EA /* TARestaurantDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE98614B1F782F88005CE7EA /* TakeAway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9861771F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAway" */;
+			buildPhases = (
+				BE9861481F782F88005CE7EA /* Sources */,
+				BE9861491F782F88005CE7EA /* Frameworks */,
+				BE98614A1F782F88005CE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeAway;
+			productName = TakeAway;
+			productReference = BE98614C1F782F88005CE7EA /* TakeAway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE9861621F782F88005CE7EA /* TakeAwayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE98617A1F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAwayTests" */;
+			buildPhases = (
+				BE98615F1F782F88005CE7EA /* Sources */,
+				BE9861601F782F88005CE7EA /* Frameworks */,
+				BE9861611F782F88005CE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9861651F782F88005CE7EA /* PBXTargetDependency */,
+			);
+			name = TakeAwayTests;
+			productName = TakeAwayTests;
+			productReference = BE9861631F782F88005CE7EA /* TakeAwayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE98616D1F782F88005CE7EA /* TakeAwayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE98617D1F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAwayUITests" */;
+			buildPhases = (
+				BE98616A1F782F88005CE7EA /* Sources */,
+				BE98616B1F782F88005CE7EA /* Frameworks */,
+				BE98616C1F782F88005CE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9861701F782F88005CE7EA /* PBXTargetDependency */,
+			);
+			name = TakeAwayUITests;
+			productName = TakeAwayUITests;
+			productReference = BE98616E1F782F88005CE7EA /* TakeAwayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE9861441F782F88005CE7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = TakeAway;
+				TargetAttributes = {
+					BE98614B1F782F88005CE7EA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					BE9861621F782F88005CE7EA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE98614B1F782F88005CE7EA;
+					};
+					BE98616D1F782F88005CE7EA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE98614B1F782F88005CE7EA;
+					};
+				};
+			};
+			buildConfigurationList = BE9861471F782F88005CE7EA /* Build configuration list for PBXProject "TakeAway" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE9861431F782F88005CE7EA;
+			productRefGroup = BE98614D1F782F88005CE7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE98614B1F782F88005CE7EA /* TakeAway */,
+				BE9861621F782F88005CE7EA /* TakeAwayTests */,
+				BE98616D1F782F88005CE7EA /* TakeAwayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE98614A1F782F88005CE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE55E8C41F798099006ED6EB /* take_away.json in Resources */,
+				BE98615D1F782F88005CE7EA /* LaunchScreen.storyboard in Resources */,
+				BE98615A1F782F88005CE7EA /* Assets.xcassets in Resources */,
+				BE9861551F782F88005CE7EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9861611F782F88005CE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2D282D1F7B80DB005748E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE98616C1F782F88005CE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE9861481F782F88005CE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9861501F782F88005CE7EA /* AppDelegate.swift in Sources */,
+				BE9861581F782F88005CE7EA /* TakeAway.xcdatamodeld in Sources */,
+				BE8DD8A71F7AE88E00F92FA1 /* RestaurantModel+CoreDataProperties.swift in Sources */,
+				BE9861931F7838F8005CE7EA /* TARestaurantDataManager.swift in Sources */,
+				BE8DD8A61F7AE88E00F92FA1 /* RestaurantModel+CoreDataClass.swift in Sources */,
+				BE9861901F783468005CE7EA /* ViewController.swift in Sources */,
+				BE9861921F7838F0005CE7EA /* TARestaurant.swift in Sources */,
+				BE2D28211F7B72EA005748E6 /* TASortOptionsViewModel.swift in Sources */,
+				BE3203AD1F7AB6A400D67BC4 /* TACoreDataManager.swift in Sources */,
+				BE9861911F78359F005CE7EA /* TARestaurantsViewModel.swift in Sources */,
+				BE98618B1F78333F005CE7EA /* TARestaurantTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE98615F1F782F88005CE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2D28241F7B7D26005748E6 /* ViewController.swift in Sources */,
+				BE2D28281F7B8067005748E6 /* TACoreDataManager.swift in Sources */,
+				BE2D28231F7B7CFF005748E6 /* ViewControllerTests.swift in Sources */,
+				BE2D28331F7B8878005748E6 /* RestaurantsViewModelTests.swift in Sources */,
+				BE2D282A1F7B806E005748E6 /* TARestaurant.swift in Sources */,
+				BE2D28291F7B8069005748E6 /* TARestaurantDataManager.swift in Sources */,
+				BE2D28311F7B84DE005748E6 /* SortOptionsViewModelTests.swift in Sources */,
+				BE2D282C1F7B809C005748E6 /* RestaurantModel+CoreDataProperties.swift in Sources */,
+				BE9861681F782F88005CE7EA /* TakeAwayTests.swift in Sources */,
+				BE2D282B1F7B809A005748E6 /* RestaurantModel+CoreDataClass.swift in Sources */,
+				BE2D28261F7B7E09005748E6 /* TARestaurantsViewModel.swift in Sources */,
+				BE2D28271F7B7E0B005748E6 /* TASortOptionsViewModel.swift in Sources */,
+				BE2D28251F7B7D69005748E6 /* TARestaurantTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE98616A1F782F88005CE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9861731F782F88005CE7EA /* TakeAwayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE9861651F782F88005CE7EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE98614B1F782F88005CE7EA /* TakeAway */;
+			targetProxy = BE9861641F782F88005CE7EA /* PBXContainerItemProxy */;
+		};
+		BE9861701F782F88005CE7EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE98614B1F782F88005CE7EA /* TakeAway */;
+			targetProxy = BE98616F1F782F88005CE7EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE9861531F782F88005CE7EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE9861541F782F88005CE7EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE98615B1F782F88005CE7EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE98615C1F782F88005CE7EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE9861751F782F88005CE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE9861761F782F88005CE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE9861781F782F88005CE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE9861791F782F88005CE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE98617B1F782F88005CE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAwayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeAway.app/TakeAway";
+			};
+			name = Debug;
+		};
+		BE98617C1F782F88005CE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAwayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeAway.app/TakeAway";
+			};
+			name = Release;
+		};
+		BE98617E1F782F88005CE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeAway;
+			};
+			name = Debug;
+		};
+		BE98617F1F782F88005CE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GBJP5SBDD;
+				INFOPLIST_FILE = TakeAwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeaway.app.TakeAwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeAway;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE9861471F782F88005CE7EA /* Build configuration list for PBXProject "TakeAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9861751F782F88005CE7EA /* Debug */,
+				BE9861761F782F88005CE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9861771F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9861781F782F88005CE7EA /* Debug */,
+				BE9861791F782F88005CE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE98617A1F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAwayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE98617B1F782F88005CE7EA /* Debug */,
+				BE98617C1F782F88005CE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE98617D1F782F88005CE7EA /* Build configuration list for PBXNativeTarget "TakeAwayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE98617E1F782F88005CE7EA /* Debug */,
+				BE98617F1F782F88005CE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE9861561F782F88005CE7EA /* TakeAway.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE9861571F782F88005CE7EA /* TakeAway.xcdatamodel */,
+			);
+			currentVersion = BE9861571F782F88005CE7EA /* TakeAway.xcdatamodel */;
+			path = TakeAway.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE9861441F782F88005CE7EA /* Project object */;
+}
