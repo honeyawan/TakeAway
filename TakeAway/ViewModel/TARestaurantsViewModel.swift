@@ -130,7 +130,7 @@ class TARestaurantsViewModel : NSObject,TARestaurantCellFavouriteDelegate {
         
         let currentmodel = filteredModels![indexPath.row]
         restaurantCell.lblName.text = currentmodel.name ?? ""
-        restaurantCell.lblStatus.text = "Status : \((currentmodel.status ?? "").uppercased())\nDistance : \(textForDistance(currentmodel.distance))  MinCost:$\(currentmodel.minCost)"
+        restaurantCell.lblStatus.text = "Status : \((currentmodel.status ?? "").uppercased())\nDistance : \(textForDistance(currentmodel.distance))  MinCost:$\(currentmodel.minCost)\nPopularity : \(currentmodel.popularity)    BestMatch:\(currentmodel.bestMatch) "
         restaurantCell.index = indexPath.row
         restaurantCell.btnFavourite.isSelected = currentmodel.isFavourite
         restaurantCell.delegate = self

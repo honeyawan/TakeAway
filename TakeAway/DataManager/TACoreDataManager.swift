@@ -17,6 +17,7 @@ class TACoreDataManager: NSObject {
     }
 
     func fetchRestaurantList()-> [RestaurantModel]? {
+        
         let context = persistentContainer.viewContext
         let fetchRequest : NSFetchRequest<RestaurantModel> = RestaurantModel.fetchRequest()
         do {
@@ -84,7 +85,6 @@ class TACoreDataManager: NSObject {
             }
         }
         saveContext()
-        
     }
     
     lazy var persistentContainer: NSPersistentContainer = {
