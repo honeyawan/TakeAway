@@ -37,6 +37,10 @@ class ViewControllerTests: XCTestCase {
     
     func testConformsToTableViewDataSourceProtocol() {
         
+        
+        XCTAssert(restaurantsViewController.conforms(to: UITableViewDelegate.self))
+        XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.tableView(_:numberOfRowsInSection:))))
+        
         XCTAssert(restaurantsViewController.conforms(to: UITableViewDataSource.self))
         
         XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.tableView(_:numberOfRowsInSection:))))
