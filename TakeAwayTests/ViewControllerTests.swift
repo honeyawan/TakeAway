@@ -39,7 +39,7 @@ class ViewControllerTests: XCTestCase {
         
         
         XCTAssert(restaurantsViewController.conforms(to: UITableViewDelegate.self))
-        XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.tableView(_:numberOfRowsInSection:))))
+//        XCTAssert(restaurantsViewController.responds(to: #selector(restaurantsViewController.tableView(_:numberOfRowsInSection:))))
         
         XCTAssert(restaurantsViewController.conforms(to: UITableViewDataSource.self))
         

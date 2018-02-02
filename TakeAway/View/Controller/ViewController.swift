@@ -63,7 +63,7 @@ extension ViewController {
 }
 
 //MARK: UITableViewDataSource
-extension ViewController : UITableViewDataSource {
+extension ViewController : UITableViewDataSource , UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantViewModel.numberOfRowsInSection()
     }
@@ -72,6 +72,9 @@ extension ViewController : UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: restaurantCellIdentifier) as! TARestaurantTableViewCell
         restaurantViewModel.configureCell(cell, indexPath: indexPath)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }
 
